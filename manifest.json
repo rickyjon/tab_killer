@@ -17,6 +17,12 @@
 
 	"permissions": [
 		"tabs"
-	]
+	],
+
+	"applications": {
+		"gecko": {
+			"id": "rickyjon.au@gmail.com"
+		}
+	}
 
 }
