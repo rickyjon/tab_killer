@@ -1,8 +1,17 @@
 /**
- * Kill tabs in the background.
+ * Make it usable on multiple web browsers
  */
+window.browser = (function () {
+  return window.msBrowser ||
+    window.browser ||
+    window.chrome;
+})();
+
 browser.tabs.onActivated.addListener(kill_tabs);
 
+/**
+ * Kill tabs in the background.
+ */
 function kill_tabs() {
 	browser.tabs.query({currentWindow: true}).then(function (tabs) {
 		if (!tabs.length) return;
