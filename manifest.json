@@ -1,0 +1,22 @@
+{
+
+	"manifest_version": 2,
+	"name": "Tab Killer",
+	"version": "1.0",
+
+	"description": "Kills duplicate tabs",
+
+	"icons": {
+		"48": "icons/logo-48.png"
+	},
+
+	"background": {
+		"scripts": ["tab_killer.js"]
+
+	},
+
+	"permissions": [
+		"tabs"
+	]
+
+}
